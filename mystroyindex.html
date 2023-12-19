@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="ko">
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mystory</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mystory-style.css">
+  </head>
+
+
+
+    <body data-bs-spy="scroll" data-bs-target="#nav-menu">
+
+    <!-- 네비게이션 시작 -->
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+            <div class="container">
+    
+                <a class="gugi-font navbar-brand" href="#home">
+                    틈</a>
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"
+                    aria-controls="nav-menu" aria-expanded="false" aria-label="메뉴">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="nav-menu">
+                    <ul class="navbar-nav ms-auto my-2">
+                        <li class="nav-item"><a class="nav-link" href="#home">홈</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#introduce">책방 소개</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#storyboard">이야기 모음집</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    <!-- 네비게이션 끝 -->
+
+
+
+    <!-- 메인 홈화면 시작-->
+    <header id="main" class="d-flex flex-column justify-content-center align-items-center vh-100 text-white">
+
+        <h1 class="display-3 fw-bold mb-5">틈</h1>
+        <p class="lead mb-5">당신이 찾고있는 이야기</p>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#bestmenuModal"
+            class="btn btn-outline-warning rounded-pill">소개하는 글</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="bestmenuModal" tabindex="-1" aria-labelledby="bestmenuModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-sm modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title text-dark fs-5" id="bestmenuModalLabel">소개하는 글</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="닫기"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="image/pexels-pixabay-256453.jpg" alt="소개글" class="img-fluid">
+                        <p class="text-muted">어서오세요.</p>
+                        <p class="text-muted">
+                            "오랜만에 만나는 외부인이로군요. 만나서 반가워요. 어떻게 이런 곳까지 오게 되었나요?
+                            ...그렇군요. 찾고있는 이야기가 있다는거죠. 그렇다면 잘 찾아오셨네요
+                            제가 운영하는 이 책방에서는 예로부터 사건 곳곳의 틈에서 발생하는 신비하고도 기이한 이야기들을 수집하고 있답니다. 
+                            원하시는 것을 찾을 때까지 마음껏 이야기를 감상하셔도 좋아요. 부디 만족스러운 시간되시길. “</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 끝 -->
+    </header>
+    <!-- 메인 홈화면 끝-->
+
+
+
+    <!-- 소개 섹션 시작 -->
+    <section class="py-5" id="introduce">
+        <div class="container">
+            <div class="row p-4 align-items-center">
+
+                <div class="col-lg-9  text-white">
+                    <h2 class="fw-bold mb-5">"어서오세요, 이야기가 가득한 이곳에"</h2>
+                    <p> 쉬이 찾아볼 수는 없지만, 그럼에도 기록되어 전해지는 신비하고 기이한 이야기들, 아무에게도 말못할 사정이 있던 이들의 비밀스런 이야기들이 모두 한 데 모아져 있는 이곳 책방. 언제, 어디에서, 어떻게 운영되는 것인지 아무도 모른다. 그저 특별한 목적을 가진 채 살아가는 사람들은 길을 거닐다 자신도 모르는 사이 무언가에 이끌려 이 책방에 들어오게 된다. 책방 안에서는 자유롭게 열람이 가능하지만, 이 곳을 벗어나면 책방에서의 기억은 사라지고, 찾던 이야기만이 기억에 남는다고..   
+                    </p>
+                </div>
+
+                <idv class="col-lg-3">
+                    <!-- 버튼 -->
+                    <button type="button" class="btn btn-warning px-4" data-bs-toggle="modal"
+                        data-bs-target="#newsModal">
+                        방문하기
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="newsModal" tabindex="-1" aria-labelledby="newsModalTitle"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content ">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="newsModalTitle">ART Cook News</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="닫기"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe src="https://www.youtube.com/embed/DzN-aG3o87k"
+                                            title="YouTube video player"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal 끝 -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 소개 섹션 끝 -->
+
+        <!-- 이야기 섹션 시작 -->
+        <section class="container overflow-hidden py-5" id="storyboard">
+
+            <div class="text-center py-5">
+                <h2 class="fw-bold">이야기 모음집</h2>
+                <p class="lead text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, adipisci?</p>
+            </div>
+    
+            <div class="row pb-5 gy-4">
+                <div class="col-sm-6 col-lg">
+                    <div class="card">
+                        <img src="image/mystery_bookwall.jpg" alt="이야기 1" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h3 class="card-title fs-4">이야기 1</h3>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias qui quo
+                                maiores quasi optio consectetur!</p>
+                            <a href="http://127.0.0.1:5500/mistory_page4.html">이어보기</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-sm-6 col-lg">
+                    <div class="card">
+                        <img src="image/pexels-iqbal-farooz-16143718.jpg" alt="이야기2" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h3 class="card-title fs-4">이야기2</h3>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias qui quo
+                                maiores quasi optio consectetur!</p>
+                            <a href="http://127.0.0.1:5500/mistory_page3.html">이어보기</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-sm-6 col-lg">
+                    <div class="card">
+                        <img src="image/jet-dela-cruz-Gf6puSx3h6Y-unsplash.jpg" alt="이야기3" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h3 class="card-title fs-4">이야기3</h3>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias qui quo
+                                maiores quasi optio consectetur!</p>
+                                <a href="http://127.0.0.1:5500/mistory_page2.html">이어보기</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-sm-6 col-lg">
+                    <div class="card">
+                        <img src="image/jet-dela-cruz-AOI_fg7A28w-unsplash.jpg" alt="이야기4" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h3 class="card-title fs-4">이야기4</h3>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias qui quo
+                                maiores quasi optio consectetur!</p>
+                            <a href="http://127.0.0.1:5500/mistory_page1.html">이어보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+        <!-- 이야기 섹션 끝 -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
